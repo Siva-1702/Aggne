@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Luckiest Guy', cursive;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height:100vh;
+  background-color: #1aec59;
+  padding: 20px;
+}
+
+.welcome_text {
+  width: 400px;
+}
+
+.welcome_form input,
+.welcome_form button {
+  display: block;
+  width: 100%;
+}
+
+.welcome_form input {
+  background-color: transparent;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 15px;
+}
+
+.welcome_form input:focus {
+  outline: none;
+}
+
+.welcome_form button{
+  margin-top: 30px;
+  padding: 20px 0;
+  border: none;
+  border-radius: 100px;
+  background-color: #fff;
+  color: #1aec59;
+  font-size: 22px;
+  transition: 0.4s all;
+}
+
+.welcome_form button:hover,
+.restart_form button:hover {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.quiz {
+  display: grid;
+  grid-template-rows: 60px auto;
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  text-align: center; 
+}
+
+.quiz_header {
+  display: flex;
+  justify-content: space-between;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.quiz_body {
+  padding: 30px 30px;
+}
+.quiz_user {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 30px;
+}
+
+.quiz_body {
+  background-color: #ecf0f1;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.option_group {
+  list-style-type: none;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.option {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  transition: 0.4s all;
+}
+
+.option:hover {
+  cursor: pointer;
+  border: 2px solid #666666;
+  color: #666666;
+}
+.option.active {
+  background-color: #666666;
+  color: #fff;
+}
+.btn-next {
+  border: none;
+  padding: 15px 35px;
+  background-color: #1aec59;
+  color: #fff;
+  border-radius: 27px;
+  transition: 0.4s all;
+  outline: none;
+}
+
+.btn-next:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #1aec59;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.award_icon {
+  display: block;
+  font-size: 300px;
+  color: #fff;
+}
+
+.end{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.username,
+.userpoints {
+  color: #fff;
+  font-size: 40px;
+  font-family: 'Luckiest Guy', cursive;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.restart_form button{
+  margin: 20px;
+  padding: 20px 0;
+  width: 200px;
+  border: none;
+  border-radius: 100px;
+  background-color: #fff;
+  color: #1aec59;
+  font-size: 22px;
+  transition: 0.4s all;
+}
+
+.box {
+  display: grid;
+  grid-template-rows: 60px auto;
+  padding: 30px;
+  width: 500px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  text-align: center; 
+}
+
+#question-answer{
+  display: flex;
+  flex-direction: column;
+  display: grid;
+  grid-template-rows: 60px auto;
+}
+
+.wrapper-full{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 3850px;
+  background-color: #1aec59;
+  padding: 10px;
+}
+
+.option_val {
+  display: block;
+  width: 300px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  transition: 0.4s all;
+}
+
+.option_val.newanswer{
+  background-color: #ff0000;
+  color: #fff;
+  padding: 5px 20px;
+}
+
+.option_val.active {
+  background-color: #06ce06;
+  color: #fff;
+  padding: 5px 20px;
+}
+
+h3 {
+  padding-bottom: 20px;
+}
+
+h3 span {
+  color: #06ce06;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <!-- style.css -->
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="end">
+           <h3 class="username"> <span class="name"></span></h3>
+           <p class="userpoints">Your Score-<span class="points"></span>/<span class="totalpoints"></span></p>
+           <form class="restart_form" name="restart_form" >
+                <button onclick="restartForm(event)">Restart Quiz</button>
+                <button onclick="viewanswer(event)">Results</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/d56261bbb9.js"></script>
+
+        <!-- user info -->
+        <script src="dist/js/end.js"></script>
+</body>
+</html>
